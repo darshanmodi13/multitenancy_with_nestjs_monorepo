@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ats-frontend/*": ["./apps/ats-frontend/*"],
+      "@ats-backend/*": ["./apps/ats-backend/*"],
+      "@ats-backend/app/*": ["./apps/ats-backend/src/app/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

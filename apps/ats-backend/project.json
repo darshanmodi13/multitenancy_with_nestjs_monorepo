@@ -1,0 +1,24 @@
+{
+  "name": "ats-backend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/ats-backend/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "ats-backend:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "ats-backend:build:development"
+        },
+        "production": {
+          "buildTarget": "ats-backend:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
